@@ -1,0 +1,12 @@
+*.o
+*.log
+Makefile
+autom4te.cache
+libtool
+stamp-h1
+demo/demo
+config.h
+config.status
+.deps
+lib/libtvision.a
+lib/tvision

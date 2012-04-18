@@ -161,12 +161,12 @@ void * allocBlock( size_t sz )
     return (char *)temp + BLK_SIZE;
 }
 
-void * operator new[] ( size_t sz ) throw()
+void * operator new[] ( size_t sz ) throw(std::bad_alloc)
 {
    return allocBlock(sz);
 }
 
-void * operator new ( size_t sz ) throw()
+void * operator new ( size_t sz ) throw(std::bad_alloc)
 {
    return allocBlock(sz);
 }

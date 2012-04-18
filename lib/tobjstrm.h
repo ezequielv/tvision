@@ -661,6 +661,10 @@ public:
     /**
      * Undocumented.
      */
+    friend ipstream& operator >> ( ipstream&, std::streamoff& );
+    /**
+     * Undocumented.
+     */
     friend ipstream& operator >> ( ipstream&, signed long& );
     /**
      * Undocumented.
